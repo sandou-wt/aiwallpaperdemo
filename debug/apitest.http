@@ -1,0 +1,13 @@
+@baseUrl = http://localhost:3000/api
+
+### test
+
+POST {{baseUrl}}/test 
+
+### gen
+POST {{baseUrl}}/gen-wallpaper
+Content-Type: application/json
+
+{
+    "description":"happy new year 2024"
+}
