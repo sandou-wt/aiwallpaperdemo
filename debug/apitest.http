@@ -9,5 +9,5 @@ POST {{baseUrl}}/gen-wallpaper
 Content-Type: application/json
 
 {
-    "description":"happy new year 2024"
+    "description":"happy birthday"
 }
