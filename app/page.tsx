@@ -11,7 +11,7 @@ import { Wallpaper } from "@/types/wallpaper";
 export default function Home() {
   const [wallpapers, setWallpapers] = useState<Wallpaper[]>([]);
   const fetchWallpapers = async function () {
-    const result = await fetch("http://localhost:3000/api/get-wallpapers");
+    const result = await fetch("/api/get-wallpapers");
     const { data } = await result.json();
 
     if (data) {
