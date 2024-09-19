@@ -8,7 +8,7 @@ interface Props {
   wallpapers: Wallpaper[];
 }
 
-export default function ({ wallpapers }: Props) {
+export default function WallpaperIndex({ wallpapers }: Props) {
   return (
     <section className="max-w-6xl mx-auto">
       <WallpaperList wallpapers={wallpapers} />

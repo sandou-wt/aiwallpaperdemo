@@ -8,7 +8,7 @@ interface Props {
   wallpapers: Wallpaper[];
 }
 
-export default function ({ wallpapers }: Props) {
+export default function WallpaperList({ wallpapers }: Props) {
   return (
     <section>
       <div className="mx-auto w-full max-w-7xl px-5 py-16 md:px-10 md:py-24">
@@ -31,7 +31,10 @@ export default function ({ wallpapers }: Props) {
               })
               .map((wallpaper: Wallpaper, idx: number) => {
                 return (
-                  <div className="mx-auto w-full max-w-md gap-4 rounded-md bg-[#f2f2f7] p-8 text-black sm:px-4 sm:py-8">
+                  <div
+                    key={wallpaper.id || idx}
+                    className="mx-auto w-full max-w-md gap-4 rounded-md bg-[#f2f2f7] p-8 text-black sm:px-4 sm:py-8"
+                  >
                     <div className="mb-3 flex w-full items-center justify-between">
                       <div className="flex items-center">
                         <img

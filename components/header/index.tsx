@@ -1,6 +1,6 @@
 import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
-export default function () {
+export default function Header() {
   return (
     <header>
       <div className="h-auto w-screen">

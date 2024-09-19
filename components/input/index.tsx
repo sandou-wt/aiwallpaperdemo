@@ -10,7 +10,7 @@ interface Props {
   setWallpapers: Dispatch<SetStateAction<Wallpaper[]>>;
 }
 
-export default function ({ setWallpapers }: Props) {
+export default function WallpaperGenerator({ setWallpapers }: Props) {
   const [description, setDescription] = useState("");
   const [loading, setLoading] = useState(false);
   const inputRef = useRef<HTMLInputElement | null>(null);

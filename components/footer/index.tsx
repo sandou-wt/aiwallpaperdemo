@@ -1,4 +1,4 @@
-export default function () {
+export default function Footer() {
   return (
     <section>
       <div className="w-screen flex-col px-6 py-20 lg:flex lg:px-10 xl:px-24">

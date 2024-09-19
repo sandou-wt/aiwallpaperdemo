@@ -1,4 +1,4 @@
-export default function () {
+export default function Hero() {
   return (
     <>
       <h1 className="my-5 text-center text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl text-primary">
